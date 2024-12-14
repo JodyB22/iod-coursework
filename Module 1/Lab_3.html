@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1 Exercise 3</title>  
+<link href="styles.css"/>
+    <style>        body { font-family: sans-serif; margin: .75; } .container { display: flex; align-items: stretch; } .column { background: red; display: flex; flex-direction: column; justify-content: center; align-items: center; flex: 1; }    </style>
+    </head>
+<body>
+    <div class="container"></div>
+    <div class="column" id="column1">
+         <h1 id="heading1">Hello</h1>
+         <img src="https://cdn.britannica.com/39/226539-050-D21D7721/Portrait-of-a-cat-with-whiskers-visible.jpg" alt="cat" height="200px" width="200px"/> 
+         <button type="button" onclick="alert('Change Me')">Click Me</button>
+         <div class="column">
+            <button class="button" onclick="changeColorAndText('blue', 'Blue Column')">Blue</button>
+            <button class="button" onclick="changeColorAndText('green', 'Green Column')">Green</button>
+            <button class="button" onclick="changeColorAndText('red', 'Red Column')">Red</button>
+        </div>
+        
+        <script>
+            function changeColorAndText(color, text) {
+               
+                document.body.style.backgroundColor = color;
+                
+               
+                document.getElementById("heading").innerText = text;
+            }
+        </script>
+        
+    </div>
+    <div class="column" id="column2">       
+         <h1 id="heading2">World</h1>   
+    </div>
+</body>
+</html>
+/project-directory
+    index.html
+    styles.css
+    script.js
