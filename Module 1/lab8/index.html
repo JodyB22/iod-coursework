@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Dice</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <h1>Roll Dice</h1>
+    
+    
+    <button onclick="rollDice(1, 6)">Roll 1 Die (6-sided)</button>
+    <button onclick="rollDice(1, 10)">Roll 1 Die (10-sided)</button>
+
+
+    <p id="result">Results will appear here.</p>
+
+    <script>
+       
+        function rollDice(numberOfDice, sides) {
+            let results = [];
+            for (let i = 0; i < numberOfDice; i++) {
+             
+                let roll = Math.floor(Math.random() * sides) + 1;
+                results.push(roll);
+            }
+
+            // Display the results
+            document.getElementById("result").innerHTML = `You rolled: ${results.join(', ')}`;
+        }
+    </script>
+
+</body>
+</html>
