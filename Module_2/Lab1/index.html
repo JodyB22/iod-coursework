@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign Up Form</h1>
+
+        <form id="userForm">
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="address" required><br>
+
+           
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+        
+            <label for="marketingEmail">
+                <input type="checkbox" id="marketingEmail" name="marketingEmail">
+                Would you like to receive marketing emails?
+            </label><br>
+
+           
+            <label for="tshirtSize">T-shirt Size:</label>
+            <label><input type="radio" name="tshirtSize" value="S"> S</label>
+            <label><input type="radio" name="tshirtSize" value="M"> M</label>
+            <label><input type="radio" name="tshirtSize" value="L"> L</label>
+            <label><input type="radio" name="tshirtSize" value="XL"> XL</label><br>
+
+            
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" name="birthdate" required><br>
+
+         
+            <button type="submit">Submit</button>
+        </form>
+
+      
+        <div class="video-container">
+            <h2></h2>
+            <video width="600" height="400" controls>
+                <source src="https://www.pexels.com/video/a-man-shopping-on-black-friday-5890229/" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
