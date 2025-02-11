@@ -1,0 +1,7 @@
+As a User, I should be able to roll one die and see the result.
+As a User, I should be able to roll two dice and see the results of both.
+As a User, I should be able to roll three dice and see the results of all three.
+As a User, I should be able to click on buttons to roll a specific number of dice.
+As a User, I should see the results of my dice rolls displayed on the screen.
+As a User, I should be able to reuse the same rollDice function to roll any number of dice, not just a fixed amount.
+As a User, I should be able to see the dice roll results dynamically after clicking a button without reloading the page.
